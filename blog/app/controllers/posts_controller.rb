@@ -28,10 +28,10 @@ class PostsController < ApplicationController
   end
 
   def update
-    @article = Article.find(params[:id])
+    @post = Post.find(params[:id])
 
-    if @article.update(article_params)
-      redirect_to @article
+    if @post.update(post_params)
+      redirect_to @post
     else
     render 'edit'
     end
