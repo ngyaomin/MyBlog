@@ -27,6 +27,16 @@ class PostsController < ApplicationController
     end
   end
 
+  def update
+    @article = Article.find(params[:id])
+
+    if @article.update(article_params)
+      redirect_to @article
+    else
+    render 'edit'
+    end
+  end
+
   private
   def post_params
     params.require(:post).permit(:title, :author, :sayings)
