@@ -5,7 +5,12 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(params[:article])
     @post.save
-    redirect_to @post  
+    redirect_to @post
+  end
+
+  private
+  def post_params
+    params.require(:post).permit(:title, :author, :sayings)
   end
 
 end
