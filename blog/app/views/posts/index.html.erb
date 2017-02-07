@@ -1,26 +1,118 @@
+<!DOCTYPE html>
+<html>
 
 <h1>Listing of postings</h1>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Author</th>
-    <th>Sayings</th>
-  </tr>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ng Yao Min personal webpage</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Article-List.css">
+    <link rel="stylesheet" href="assets/css/Carousel-Hero.css">
+    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Features-Boxed.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="assets/css/Lightbox-Gallery.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean1.css">
+    <link rel="stylesheet" href="assets/css/Projects-Clean.css">
+    <link rel="stylesheet" href="assets/css/pruduct-list.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/tabbed_slider.css">
+    <link rel="stylesheet" href="assets/css/tabbed_slider1.css">
+    <link rel="stylesheet" href="assets/css/Testimonials.css">
+    <link rel="stylesheet" href="assets/css/Timeline.css">
+    <link rel="stylesheet" href="assets/css/Zig-Zag-Timeline-v31.css">
+</head>
 
-  <% @posts.each do |post| %>
-    <tr>
-      <td><%= post.title %></td>
-      <td><%= post.author %></td>
-      <td><%= post.sayings %></td>
-      <td><%= link_to 'Show', post_path(post) %></td>
-      <td><%= link_to 'Edit', edit_post_path(post) %></td>
-      <td><%= link_to 'Destroy', post_path(post),
-           method: :delete,
-           data: { confirm: 'Are you sure or not ur precious would be terminated lei?' } %></td>
-    </tr>
-  <% end %>
-</table>
+ass="nav navbar-nav navbar-right">
+                    <li role="presentation"><a href="index.html">My Profile</a></li>
+                    <li role="presentation" data-bs-hover-animate="flash"><a href="resume.html">My Resume</a></li>
+                    <li role="presentation" data-bs-hover-animate="flash"><a href="travel.html">Travel page</a></li>
+                    <li role="presentation"><a href="blog.html">blog </a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="projects.html" data-bs-hover-animate="shake">My Project Portffolio</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="investments.html">Investments </a></li>
+                            <li role="presentation"><a href="#">project 2</a></li>
+                            <li role="presentation"><a href="#">project 3</a></li>
+                            <li role="presentation"><a href="#">project 4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="article-list">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Latest Happening</h2>
+                <p class="text-center">Here are some articles I wrote</p>
+            </div>
+            <div class="row articles">
+                <div class="col-md-4 col-sm-6 item">
+                    <a href="#"><img class="img-responsive" src="assets/img/desk.jpg"></a>
+                    <h3 class="name">Article Title</h3>
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p><a href="#" class="action"><i class="glyphicon glyphicon-circle-arrow-right"></i></a></div>
+                <div
+                class="col-md-4 col-sm-6 item">
+                    <a href="#"><img class="img-responsive" src="assets/img/building.jpg"></a>
+                    <h3 class="name">To be inputed</h3>
+                    <p class="description">To be inputted,.</p><a href="#" class="action"><i class="glyphicon glyphicon-circle-arrow-right"></i></a></div>
+            <div class="col-md-4 col-sm-6 item">
+                <a href="#"><img class="img-responsive" src="assets/img/loft.jpg"></a>
+                <h3 class="name">To be</h3>
+                <p class="description">or not to be</p><a href="#" class="action"><i class="glyphicon glyphicon-circle-arrow-right"></i></a></div>
+        </div>
+    </div>
+    </div>
+
+    <table>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Sayings</th>
+      </tr>
+
+      <% @posts.each do |post| %>
+        <tr>
+          <td><%= post.title %></td>
+          <td><%= post.author %></td>
+          <td><%= post.sayings %></td>
+          <td><%= link_to 'Show', post_path(post) %></td>
+          <td><%= link_to 'Edit', edit_post_path(post) %></td>
+          <td><%= link_to 'Destroy', post_path(post),
+               method: :delete,
+               data: { confirm: 'Are you sure or not ur precious would be terminated lei?' } %></td>
+        </tr>
+      <% end %>
+    </table>
+
+
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="https://github.com/ngyaomin" target="_blank"><i class="icon ion-social-github-outline"></i></a><a href="mailto:ngyaomin@ymail.com" target="_blank"><i class="icon ion-ios-email-outline"></i></a><a href="https://sg.linkedin.com/in/yao-min-ng-525b8523"
+                target="_blank"><i class="icon ion-social-linkedin-outline"></i></a><a href="https://www.facebook.com/ngyaomin" target="_blank"><i class="icon ion-social-facebook"></i></a></div>
+            <p class="copyright">Ng Yao Min© 2017</p>
+        </footer>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-animation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <script src="assets/js/tabbed_slider.js"></script>
+
+
+
+
+
 
 
 <%= link_to 'New post', new_post_path %>
+
+</body>
+
+</html>
