@@ -338,3 +338,12 @@ div.media-body {
 table, th, td {
    border: 1px solid black;
 }
+
+table {
+  width: 90%;
+  margin-left: 10px;
+}
+
+th, td {
+  padding: 20px;
+}
