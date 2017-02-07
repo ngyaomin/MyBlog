@@ -1,1 +1,23 @@
 <h1>New Post</h1>
+
+
+<%= form_for :post do |f| %>
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <%= f.label :author %><br>
+    <%= f.text_field :author %>
+  </p>
+
+  <p>
+    <%= f.label :sayings %><br>
+    <%= f.text_area :anything %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
