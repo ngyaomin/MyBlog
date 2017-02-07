@@ -11,16 +11,21 @@ class PostsController < ApplicationController
     @post = Post.new
   end
 
+  def edit
+    @post = Post.find(params[:id])
+  end
 
-def create
-  @post = Post.new(post_params)
 
-  if @post.save
+
+  def create
+    @post = Post.new(post_params)
+
+    if @post.save
      redirect_to @post
-   else
+    else
      render 'new'
-   end
- end
+    end
+  end
 
   private
   def post_params
