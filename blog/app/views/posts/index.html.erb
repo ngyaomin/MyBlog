@@ -15,6 +15,9 @@
       <td><%= post.sayings %></td>
       <td><%= link_to 'Show', post_path(post) %></td>
       <td><%= link_to 'Edit', edit_post_path(post) %></td>
+      <td><%= link_to 'Destroy', post_path(article),
+           method: :delete,
+           data: { confirm: 'Are you sure or not ur precious would be terminated lei?' } %></td>
     </tr>
   <% end %>
 </table>
