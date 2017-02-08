@@ -5,7 +5,6 @@ class Post < ApplicationRecord
 
   validates :author, presence: true,
                      length: { minimum: 5 },
-                     uniqueness: true,
                      format: { with: /\A[a-zA-Z]+\z/,
                      message: "only allows letters" }
 
