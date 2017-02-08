@@ -1,4 +1,4 @@
-MyBlog
+MyBlog/br
 This will tell how to operate the blog page
 
 Top Menu bar
