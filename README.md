@@ -7,7 +7,7 @@ Top Menu bar
   
 To run the program, start rails server and go to localhost:3000 in the browser to bring up the index page
 Click on MyBlog link near the bottom of page
-Click New Post to create a new post
+Click "Share your experience" to create a new post
   The title of the blog post should not be duplicate ( Case insensitive ).
   The title of the blog post should be minimum of 75 characters.
   The author name cannot be blank in your blog post.
