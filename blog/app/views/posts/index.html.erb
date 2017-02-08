@@ -19,28 +19,30 @@
 
 
 <body>
-    <nav class="navbar navbar-default navigation-clean" data-bs-hover-animate="rubberBand">
-        <div class="container-fluid">
-            <div class="navbar-header"><a class="navbar-brand navbar-link"><strong>Ng Yao Min Blog Page</strong></a>
-                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1" data-bs-hover-animate="pulse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-            </div>
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="nav navbar-nav navbar-right">
-                  <li role="presentation"><%= link_to 'My Portfolio', controller: 'blog' %> </a></li>
-                  <li role="presentation" data-bs-hover-animate="flash"><a href="resume.html">My Resume</a></li>
-                  <li role="presentation" data-bs-hover-animate="flash"><a href="travel.html">Travel page</a></li>
-                  <li role="presentation"><%= link_to 'My Blog', controller: 'posts' %> </a></li>
-                        <ul class="dropdown-menu" role="menu">
-                            <li role="presentation"><a href="investments.html">Investments </a></li>
-                            <li role="presentation"><a href="#">project 2</a></li>
-                            <li role="presentation"><a href="#">project 3</a></li>
-                            <li role="presentation"><a href="#">project 4</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <nav class="navbar navbar-default navigation-clean" data-bs-hover-animate="rubberBand">
+      <div class="container-fluid">
+          <div class="navbar-header"><a class="navbar-brand navbar-link"><strong>Ng Yao Min Profile Page</strong></a>
+              <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1" data-bs-hover-animate="pulse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+          </div>
+          <div class="collapse navbar-collapse" id="navcol-1">
+              <ul class="nav navbar-nav navbar-right">
+                    <li role="presentation"><%= link_to 'My Portfolio', controller: 'blog' %> </a></li>
+                    <li role="presentation" data-bs-hover-animate="flash"><a href="resume.html">My Resume</a></li>
+                    <li role="presentation" data-bs-hover-animate="flash"><a href="travel.html">Travel page</a></li>
+                    <li role="presentation"><%= link_to 'My Blog', controller: 'posts' %> </a></li>
+
+                  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="projects.html" data-bs-hover-animate="shake">My Project Portffolio</a>
+                      <ul class="dropdown-menu" role="menu">
+                          <li role="presentation"><a href="investments.html">Investments </a></li>
+                          <li role="presentation"><a href="#">project 2</a></li>
+                          <li role="presentation"><a href="#">project 3</a></li>
+                          <li role="presentation"><a href="#">project 4</a></li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
     <div class="article-list">
         <div class="container">
             <div class="intro">
