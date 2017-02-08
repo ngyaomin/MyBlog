@@ -70,26 +70,20 @@
     <h1>Listing of postings</h1>
 
 
-    <table>
-      <tr>
-        <th>Title</th>
-        <th>Author</th>
-        <th>Sayings</th>
-      </tr>
 
       <% @posts.each do |post| %>
-        <tr>
-          <td><%= post.title %></td>
-          <td><%= post.author %></td>
-          <td><%= post.sayings %></td>
-          <td><%= link_to 'Show', post_path(post) %></td>
-          <td><%= link_to 'Edit', edit_post_path(post) %></td>
-          <td><%= link_to 'Destroy', post_path(post),
+<div class = container>
+        <h2>  <%= post.title %> </h2>
+          <%= post.author %>
+          <%= post.sayings %>
+          <%= link_to 'Show', post_path(post) %>
+          <%= link_to 'Edit', edit_post_path(post) %>
+          <%= link_to 'Destroy', post_path(post),
                method: :delete,
-               data: { confirm: 'Are you sure or not ur precious would be terminated lei?' } %></td>
-        </tr>
+               data: { confirm: 'Are you sure or not ur precious would be terminated lei?' } %>
+</div>
       <% end %>
-    </table>
+
 
     <div class="bloglink">
     <%= link_to 'New post', new_post_path %>
