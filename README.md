@@ -2,7 +2,8 @@ MyBlog.
 This will tell how to operate the blog page
 
 Top Menu bar
-  !!!The links on the menu bar does not work yet as I have not created the other pages!!!
+  !!!only my portflio and my blog link works for now!!!
+  !!!rest of the pages have not been created yet!!!
   
 To run the program, start rails server and go to localhost:3000 in the browser to bring up the index page
 Click on MyBlog link near the bottom of page
