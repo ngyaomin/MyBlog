@@ -26,11 +26,10 @@
             </div>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li role="presentation"><a href="index.html">My Profile</a></li>
-                    <li role="presentation" data-bs-hover-animate="flash"><a href="resume.html">My Resume</a></li>
-                    <li role="presentation" data-bs-hover-animate="flash"><a href="travel.html">Travel page</a></li>
-                    <li role="presentation"><a href="blog.html">blog </a></li>
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="projects.html" data-bs-hover-animate="shake">My Project Portffolio</a>
+                  <li role="presentation"><%= link_to 'My Portfolio', controller: 'blog' %> </a></li>
+                  <li role="presentation" data-bs-hover-animate="flash"><a href="resume.html">My Resume</a></li>
+                  <li role="presentation" data-bs-hover-animate="flash"><a href="travel.html">Travel page</a></li>
+                  <li role="presentation"><%= link_to 'My Blog', controller: 'posts' %> </a></li>
                         <ul class="dropdown-menu" role="menu">
                             <li role="presentation"><a href="investments.html">Investments </a></li>
                             <li role="presentation"><a href="#">project 2</a></li>
