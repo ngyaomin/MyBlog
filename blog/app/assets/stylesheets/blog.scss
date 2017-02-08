@@ -273,11 +273,7 @@ div.formsdisplay {
 }
 
 
-.field_with_errors {
-  padding: 2px;
-  background-color: red;
-  display: table;
-}
+
 
 div.sayingsdisplay {
   background-color: red;
@@ -288,4 +284,10 @@ div.sayingsdisplay {
 
 .text_area {
   background-color: yellow;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
 }
