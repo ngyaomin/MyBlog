@@ -28,6 +28,8 @@ Click "Share your experience" to create a new post
   
   Sayings content cannot be less than 250 characters and should not exceed 2000 characters.
   
+  Sayings also cannot be duplicated (to prevent spam)
+  
  click Create post to create post
  
  At the blog page
