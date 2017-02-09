@@ -1,5 +1,5 @@
 class Post < ApplicationRecord
-  has_many :comments
+  
   validates :title, presence: true,
                     length: { maximum: 75 },
                     uniqueness: { case_sensitive: false }
@@ -15,6 +15,5 @@ class Post < ApplicationRecord
                       length: { minimum: 250, maximum:2000 },
                       uniqueness: true
 
-  validates :body, presence: true
 
 end
