@@ -34,8 +34,12 @@ Click "Share your experience" to create a new post
  
  At the blog page
  
-  Show: show details of post
+  Show: show details of post, and also the comment.
   
   edit: allow you to edit a post
   
   destory: deletes the post, warning will be given
+  
+  Comment
+    
+    both email and comment body must be present
