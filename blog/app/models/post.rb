@@ -14,6 +14,6 @@ class Post < ApplicationRecord
                       length: { minimum: 250, maximum:2000 },
                       uniqueness: true
   has_many :comments
-  validates :comment, presence: true,
-                    
+  validates :comment, presence: true
+
 end
