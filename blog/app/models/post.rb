@@ -1,7 +1,7 @@
 class Post < ApplicationRecord
   validates :title, presence: true,
                     length: { maximum: 75 },
-                    uniqueness: { case_sensitive: false}
+                    uniqueness: { case_sensitive: false }
 
 
   validates :author, presence: true,
