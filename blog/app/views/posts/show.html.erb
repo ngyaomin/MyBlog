@@ -1,10 +1,9 @@
-<h1> Your post </h1>
-<div class="yourpost">
-<p>
-  <strong>Title:</strong>
+<h1>
+  Title:
   <%= @post.title %>
-</p>
+</h1>
 
+<div class="yourpost">
 <p>
   <strong>Author:</strong>
   <%= @post.author %>
@@ -15,7 +14,7 @@
   <%= @post.sayings %>
 </p>
 
-<h2>Comments</h2>
+<h3>Comments</h3>
 <%= render @post.comments %>
 
 <h2>Add a comment:</h2>
