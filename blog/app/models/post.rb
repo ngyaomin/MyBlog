@@ -17,3 +17,11 @@ class Post < ApplicationRecord
   has_many :comments
 
 end
+
+
+def self.search(search)
+  where("title LIKE ?", "%#{search}%")
+  where("author LIKE ?", "%#{search}%")
+  where("sayings LIKE ?", "%#{search}%")
+
+end
