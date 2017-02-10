@@ -92,7 +92,9 @@
     <% end %>
 
 
-
+    <% if @posts.blank? %>
+    <h4>There are no posts containing the term <%= params[:search] %>.</h4>
+  <% end %>
 
     <div class="bloglink">
     <%= link_to 'Share your experience', new_post_path %>
