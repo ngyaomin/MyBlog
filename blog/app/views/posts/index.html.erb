@@ -86,6 +86,13 @@
     </div>
       <% end %>
 
+    <% form_tag posts_path, :method => 'get' do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>
+  </p>
+<% end %>
+
 
     <div class="bloglink">
     <%= link_to 'Share your experience', new_post_path %>

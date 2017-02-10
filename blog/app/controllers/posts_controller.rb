@@ -46,6 +46,10 @@ class PostsController < ApplicationController
     redirect_to posts_path
   end
 
+  def index
+    @posts = Post.search(params[:search])
+  end
+
   private
   def post_params
     params.require(:post).permit(:title, :author, :sayings)
