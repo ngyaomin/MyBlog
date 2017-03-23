@@ -1,6 +1,6 @@
 
-     <%= post.title %>
-     <%= post.author %>
+<%= form_for : search_posts_path, method:"post" do |f| %>
+<% text_field_tag "search" %>
 
 
-     <%= post.sayings %>
+<%end%>
